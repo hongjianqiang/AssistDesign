@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../js/jquery.js"></script>
+	<!-- CSS style -->
+	<style>
+	body{ width: 452px; height: 532px; }
+	.pannel{ width: 422px; height: auto; background: url(../img/rank.png) 0 0 #fff no-repeat; padding-left:10; margin-left: calc(100vw - 100%); }
+	.pannel ul { margin: 0px; padding: 0; padding-top: 60px; }
+	.pannel ul li{ list-style:none; display:block; height:40px; line-height:40px; padding-left:45px; color:#666; cursor:pointer; background-position:5% 50%; background-repeat:no-repeat; background-color:#f7f7f7; margin-bottom:1px; }
+	.pannel ul li:hover{ background-color:#eee; }
+	.pannel ul li a{ color:#666; text-decoration:none; display:block; padding-left:10px; }
+	.pannel i{ width:30px;height:40px;float:right;display:block;-webkit-transition: 0.2s ease-in;-moz-transition: 0.2s ease-in;-o-transition: 0.2s ease-in;transition: 0.2s ease-in;}
+	.pannel i.on{ background:url(../img/r_arrow.png) center center no-repeat;-moz-transform: rotate(90deg);-o-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+	.version { float: right; margin-top: 20px; margin-right: 20px; color: #ccc; }
+	
+	.detail { margin-left:36px;margin-top:0px;margin-bottom:0px; }
+	.detail div { padding-left:10px;padding-bottom:10px; }
+
+	.SyncCate { background-image:url(../img/sync.png); }
+	.add { background-image:url(../img/add.png); }
+	</style>
+</head>
+
+<body>
+	<div class="pannel">
+		<a href="../popup.html" style="width:280px;height:55px;top:9px;left:25px;position:absolute;display:block;"></a>
+		<ul>
+			<li id="add" class="add" data-action="Add">
+				<a>Add <i></i> </a>
+			</li>
+		</ul>
+	</div>
+	<!-- Javascript -->
+	<script src="../js/MKDMTB/模块代码同步.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+	"name": "网店装修辅助更新工具",
+	"version": "1.5.0",
+	"manifest_version": 2,
+	"description": "方便快捷的辅助网店装修的更新，减少人工的重复操作。下载地址：http://o6kvgccgc.bkt.clouddn.com/AssistDesign.crx",
+	"icons": { "16": "img/icon16.png", "48": "img/icon48.png", "128": "img/icon128.png" },
+	"page_action": {
+		"default_title": "网店装修辅助更新工具",
+		"default_popup": "popup.html"
+	},
+	"permissions" : [
+		"tabs",
+		"activeTab",
+		"storage",
+		"unlimitedStorage",
+		"*://*.tmall.com/*",
+		"*://*.taobao.com/*",
+		"*://*.junezx.com/*",
+		"*://*.maijsoft.com/*"
+	],
+	"background": {
+		"page": "background.html",
+		"persistent": false
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.tmall.com/*", "*://*.taobao.com/*", "*://*.maijsoft.com/*"],
+			"js": ["js/jquery.js", "js/contentscript.js", "js/PLXGMS/contentscript.js"],
+			"all_frames": true,
+			"run_at": "document_end"
+		}
+	],
+	"content_security_policy": "script-src 'self' https://cdn.bootcss.com; object-src 'self'",
+	"web_accessible_resources": [
+		"img/*.*",
+		"css/*.*",
+		"js/*.*"
+	]
+}

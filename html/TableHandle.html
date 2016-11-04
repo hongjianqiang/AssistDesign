@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="../js/jquery.js"></script>
+	<!-- CSS style -->
+	<style>
+	body{ /* width: 452px; height: 532px; */ }
+	.pannel{ /* width: 422px;  height: auto; */ background: url(../img/rank.png) 0 0 #fff no-repeat; padding-left:10; margin-left: calc(100vw - 100%); }
+	.pannel ul { margin: 0px; padding: 0; padding-top: 60px; }
+	.pannel ul li{ list-style:none; display:block; height:40px; line-height:40px; padding-left:45px; color:#666; cursor:pointer; background-position:5% 50%; background-repeat:no-repeat; background-color:#f7f7f7; margin-bottom:1px; }
+	.pannel ul li:hover{ background-color:#eee; }
+	.pannel ul li a{ color:#666; text-decoration:none; display:block; padding-left:10px; }
+	.pannel i{ width:30px;height:40px;float:right;display:block;-webkit-transition: 0.2s ease-in;-moz-transition: 0.2s ease-in;-o-transition: 0.2s ease-in;transition: 0.2s ease-in;}
+	.pannel i.on{ background:url(../img/r_arrow.png) center center no-repeat;-moz-transform: rotate(90deg);-o-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+	.version { float: right; margin-top: 20px; margin-right: 20px; color: #ccc; }
+	
+	.detail { margin-left:36px;margin-top:0px;margin-bottom:0px; }
+	.detail div { padding-left:10px;padding-bottom:10px; }
+
+	.SyncCate { background-image:url(../img/sync.png); }
+	.add { background-image:url(../img/add.png); }
+	</style>
+</head>
+
+<body>
+	<div class="pannel">
+		<a href="../popup.html" style="width:280px;height:55px;top:9px;left:25px;position:absolute;display:block;"></a>
+		<ul></ul>
+		<textarea id="TableHandle" style="width:98%; height:400px; margin-bottom:20px;" placeholder="请把需要处理的代码粘贴到此处" name="code"></textarea>
+		<textarea id="Images" style="width:98%; height:200px;" placeholder="请把需要插入的一组图片粘贴到此处"></textarea>
+		<br>
+		<button data-action="TableHandle" style="margin:5px 5px; cursor:pointer;"> 确定 </button>
+		<button data-action="beautify" style="margin:5px 5px; cursor:pointer;"> 代码美化 </button>
+		<button data-action="WindowOpen" href="http://junezx.com/3.0/#TableHandle" style="margin:5px 5px; cursor:pointer; display:none;">打开六月设计3.0</button>
+	</div>
+	<!-- Javascript -->
+	<script src="../js/TABLEH/beautify-html.js"></script>
+	<script src="../js/TABLEH/TableHandle.js"></script>
+</body>
+</html>

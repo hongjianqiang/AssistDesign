@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<!-- CSS style -->
+	<style>
+	body{ width: 452px; height: 532px; }
+	.pannel{ width: 422px; height: auto; background: url(../img/rank.png) 0 0 #fff no-repeat; padding-left:10; margin-left: calc(100vw - 100%); }
+	.pannel ul { margin: 0px; padding: 0; padding-top: 60px; }
+	.pannel ul li{ list-style:none; display:block; height:40px; line-height:40px; padding-left:45px; color:#666; cursor:pointer; background-position:5% 50%; background-repeat:no-repeat; background-color:#f7f7f7; margin-bottom:1px; }
+	.pannel ul li:hover{ background-color:#eee; }
+	.pannel ul li a{ color:#666; text-decoration:none; display:block; padding-left:10px; }
+	.pannel i{ width:40px;height:40px;float:right;display:block;background:url(img/r_arrow.png) center center no-repeat #eee;-webkit-transition: 0.2s ease-in;-moz-transition: 0.2s ease-in;-o-transition: 0.2s ease-in;transition: 0.2s ease-in;}
+	.pannel i.on{ background:url(img/r_arrow.png) center center no-repeat;-moz-transform: rotate(90deg);-o-transform: rotate(90deg);-webkit-transform: rotate(90deg);transform: rotate(90deg);}
+	.version { float: right; margin-top: 20px; margin-right: 20px; color: #ccc; }
+	</style>
+</head>
+
+<body>
+	<div class="pannel">
+		<span class="version">v1.5.0 Powered By：<em>洪建强</em></span>
+		<ul>
+			<li id="DSGXFB" style="background-image:url(img/Alarm-clock.png);">
+				<a href="html/定时更新发布.html">定时更新发布 <i></i> </a>
+			</li>
+			<li id="MKDMTB" style="background-image:url(img/sync.png);">
+				<a href="html/模块代码同步.html">模块代码同步 <i></i> </a>
+			</li>
+			<li id="KMKPX" style="background-image:url(img/sort.png);">
+				<a><input type="text" value="" style="width:180px; margin-right:5px;">产品排序（显示/隐藏） <i data-action="SortItems"></i> </a>
+			</li>
+			<li id="XSMKID" style="background-image:url(img/ID.png);">
+				<a data-action="ShowID"><input type="checkbox">显示模块ID（添加或移动模块时，请取消√勾选） <i></i> </a>
+			</li>
+			<li id="TABLEH" style="background-image:url(img/table.png);">
+				<a href="html/TableHandle.html" target="_blank">针对 Photoshop 导出的 Table 切片代码进行处理 <i></i> </a>
+			</li>
+
+			<hr>
+
+			<li id="PLXGMS" style="background-image:url(img/edit.png);">
+				<a href="http://tb.maijsoft.com/index.php?r=point/list#detail" target="_blank">批量修改宝贝描述 <i></i> </a>
+			</li>
+
+			<hr>
+
+			<li id="INSERTJQ" style="background-image:url(img/JS.png);">
+				<a><input type="text" value="//cdn.bootcss.com/jquery/1.12.0/jquery.js" style="width:180px; margin-right:5px;">给当前页面插入JS库 <i data-action="InsertJS"></i> </a>
+			</li>
+		</ul>
+	</div>
+	<!-- Javascript -->
+	<script src="js/jquery.js"></script>
+	<script src="js/popup.js"></script>
+</body>
+</html>
